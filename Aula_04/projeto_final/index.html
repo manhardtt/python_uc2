@@ -55,7 +55,7 @@
         }
 
         .tabela_simples thead th{
-            background-color: aqua;
+            background-color: rgb(126, 186, 186);
             border: 1px solid rgb(0, 0, 0);
             padding: 10px;
             font-weight: bold;
@@ -68,18 +68,21 @@
         }
 
         .tabela_zebrada tbody tr:nth-child(even) {
-            background-color: rgb(96, 141, 51); /* Linhas Pares */
+            background-color: rgb(255, 255, 255); /* Linhas Pares */
         }
 
         .tabela_zebrada tbody tr:nth-child(odd) {
-            background-color: rgb(36, 87, 132); /* Linhas Ímpares */
+            background-color: rgb(255, 255, 255); /* Linhas Ímpares */
         }
         
         .tabela_zebrada tbody tr:hover{
-            background-color: bisque;
-            color: red;
-            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(155, 153, 153);
+            color: rgb(0, 0, 0);
             font-weight: bolder;
+        }
+
+        .logo_img{
+            max-height: 40px;
         }
 
     </style>
@@ -113,22 +116,31 @@
 
     <!-- Area principal-->
     <main>
+        <h1> Catálogo de Camisas Esportivas </h1>
         <table class="tabela_simples tabela_zebrada  bg bg-secondary text-black">   
+           
+
+
             <!-- Head da Tabela -->   
             <thead>
               <!-- Linha -->       
               <tr>
+                <th>Foto</th>
                 <th>Produto</th>
-                <th>Preço</th>
+                <th> Preço</th>
               </tr>
             </thead>
             <!-- Corpo da tabela --> 
             <tbody>
-              <!-- Linha -->     
+              <!-- 1o item -->     
               <tr>        
-                <td>Tênis A</td>
-                <td>R$ 299,90</td>
+                <td href="." class="camisa1">
+                    <img src="img/camisa-retro-fc-barcelona-201617-home-470181.webp" alt="Logo">
+                <td>
+                <td> Camisa Barcelona 16/17</td>
+                <td> 289,90 R$</td>
               </tr>
+            </tbody>
               
               <!-- Coluna Mesclada
               <tr>
@@ -145,27 +157,107 @@
                 </tr>
              -->
 
+             <tbody>
+                <!-- 2o item -->     
                 <tr>        
-                    <td>Tênis B</td>
-                    <td>R$ 189,90</td>
-                  </tr>
+                  <td href="." class="camisa2">
+                      <img src="img/barca.webp" alt="Logo">
+                  <td>
+                  <td> Camisa Barcelona 24/25</td>
+                  <td> 289,90 R$</td>
+                </tr>
+              </tbody>
+                <tr>        
+                    <tbody>
+                        <!-- 3o item -->     
+                        <tr>        
+                          <td href="#" class="camisa3">
+                              <img src="img/arsenal.png" alt="Logo">
+                          <td>
+                          <td> Camisa Arsenal 24/25</td>
+                          <td> 203,90 R$</td>
+                        </tr>
+                      </tbody>
 
-                  <td>Tênis C</td>
-                    <td>R$ 239,90</td>
-                  </tr>
+                      <tbody>
+                        <!-- 4o item -->     
+                        <tr>        
+                          <td href="." class="camisa4">
+                              <img src="img/city.png" alt="Logo">
+                          <td>
+                          <td> Camisa Manchaster City 24/25</td>
+                          <td> 259,90 R$</td>
+                        </tr>
+                      </tbody>
 
-                  <td>Tênis D</td>
-                    <td>R$ 999,90</td>
-                  </tr>
+                      <tbody>
+                        <!-- 5o item -->     
+                        <tr>        
+                          <td href="." class="camisa5">
+                              <img src="img/fluminense.jpg" alt="Logo">
+                          <td>
+                          <td> Camisa Fluminense 10/11</td>
+                          <td> 321,90 R$</td>
+                        </tr>
+                      </tbody>
 
-                  <td>Tênis E</td>
-                    <td>R$ 356,90</td>
-                  </tr>
+                      <tbody>
+                        <!-- 6o item -->     
+                        <tr>        
+                          <td href="." class="camisa6">
+                              <img src="img/portugal.jpg" alt="Logo">
+                          <td>
+                          <td> Camisa Portugal 25/26</td>
+                          <td> 350,90 R$</td>
+                        </tr>
+                      </tbody>
 
-                  <td>Tênis F</td>
-                    <td>R$ 1298,90</td>
-                  </tr>
 
+                      <tbody>
+                        <!-- 7o item -->     
+                        <tr>        
+                          <td href="." class="camisa7">
+                              <img src="img/psg.png" alt="Logo">
+                          <td>
+                          <td> Camisa Paris-Saint Germain Home 16/17</td>
+                          <td> 200,50 R$</td>
+                        </tr>
+                      </tbody>
+
+
+                      <tbody>
+                        <!-- 8o item -->     
+                        <tr>        
+                          <td href="." class="camisa8">
+                              <img src="img/real.webp" alt="Logo">
+                          <td>
+                          <td> Camisa Real M. Third 24/25</td>
+                          <td> 341,90 R$</td>
+                        </tr>
+                      </tbody>
+
+                      <tbody>
+                        <!-- 9o item -->     
+                        <tr>        
+                          <td href="." class="camisa9">
+                              <img src="img/cortinas.webp" alt="Logo">
+                          <td>
+                          <td> Camisa Corinthians 25/26</td>
+                          <td> 322,90 R$</td>
+                        </tr>
+                      </tbody>
+
+
+                      <tbody>
+                        <!-- 10o item -->     
+                        <tr>        
+                          <td href="." class="camisa10">
+                              <img src="img/img.webp" alt="Logo">
+                          <td>
+                          <td> Camisa Brasil Away 24/25</td>
+                          <td> 498,90 R$</td>
+                        </tr>
+                      </tbody>
             </tbody>
           </table>
 
