@@ -70,6 +70,7 @@
                 <!-- 1a coluna -->
                 <div class="col-md-2">
                     <p>Logo</p>
+                    <img src="img/logo.mp4" alt="Logo" class="animate__animated animate__fadeInDown" style="width:150px;">
                 </div>
                 
                 <!-- 2a coluna -->
@@ -87,67 +88,139 @@
     <!-- Fim: Cabecalho da Página -->
 
     <!-- Area principal -->
-    <main>
-       
-       <h1 class="mb-4 text-center"> Catálogo de Tênis Esportivos</h1>
-       <div class="table-responsive-lg">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-10">
-                <div class="table-responsive-lg">
-                    <table class="table table-light table-striped">
-        <table class="table table-light table striped"> </table>   
+    <main class="container">
+    <form action="" method="post">
+
+        <!-- 1a Linha -->
+        <div class="row mb-4">
+
+            <!-- SELECT - Estado -->
+            <div class="col-md-5">
+                <label for="estados" class="form-label">Selecione seu Estado:</label>
+                <select id="estados" class="form-select" aria-label="Selecione um Estado">
+                <option selected disabled></option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AP">Amazonas</option>
+                <option value="AP">Bahia</option>
+                <option value="AP">Ceará</option>
+                <option value="AP">Espírito Santo</option>
+                <option value="AP">Goiás</option>
+                <option value="AP">Maranhão</option>
+                <option value="AP">Mato Grosso</option>
+                <option value="AP">Mato Grosso do Sul</option>
+                <option value="AP">Minas Gerais</option>
+                <option value="AP">Pará</option>
+                <option value="AP">Paraíba</option>
+                <option value="AP">Paraná</option>
+                <option value="AP">Pernambuco</option>
+                <option value="AP">Piauí</option>
+                <option value="AP">Rio de Janeiro</option>
+                <option value="AP">Rio Grande do Norte</option>
+                </select>
+            </div>
         </div>
-       
-       
-        <!-- Tabela-->
-        <table class="table">
 
-            <!-- Cabeçalho -->
-            <thead class="table-dark">
+        <!-- 2a Linha -->
+        <div class="row mb-4">
+
+            <!-- Gênero (Radio Buttons) -->
+            <div class="col-md-12">
+                <h3 class="small mb-3">Selecione seu Gênero:</h3>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoMasculino" value="masculino" checked>
+                    <label class="form-check-label small" for="generoMasculino">
+                        Masculino
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoFeminino" value="feminino">
+                    <label class="form-check-label small" for="generoFeminino">
+                        Feminino
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoNaoBinario" value="nao_binario">
+                    <label class="form-check-label small" for="generoNaoBinario">
+                        Não Binário
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoTransgenero" value="transgenero">
+                    <label class="form-check-label small" for="generoTransgenero">
+                        Transgênero
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoOutro" value="outro">
+                    <label class="form-check-label small" for="generoOutro">
+                        Outro
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoNaoInformar" value="nao_informar">
+                    <label class="form-check-label small" for="generoNaoInformar">
+                        Não Informar
+                    </label>
+                </div>
+            </div>
+
+            <!-- 3a Linha -->
             
-            
-                <tr>
-                <th scope="col" style="width: 15%"> Foto </th>
-                <th scope="col" style="width: 55%"> Descrição </th>
-                <th scope="col" style="width: 30%"> Valor </th>
-            </tr>
-            </thead>
-            <tr>
-                <td href="#" class="tenis_1">
-                    <img src="img/shoes5.jpg" 
-                    class="img-thumbnail"> 
-                </td>
-                <td>
-                <h5>Tenis Asics Run 25'<h5>
-                <ul class="list-unstyled">
-                    <li><small> Cor: Cinza/Verde </small></li>
-                    <li><small> Material: Dry-Fit/Corrida </small></li>
-                    <li><span class="badge rounded-pill text-bg-success"> Disponível </span></li>
-                </ul>
+            <!-- Interesses pessoais -->
+        <div class="col-md-12">
+            <h3 class="small mb-3">Selecione seus Interesses:</h3>
 
-            </td>
-            <td>
-                <span class="text-success fw-bold"> R$ 350,00</span>
-                <del class="text-muted d-block"> 432,90</del>
-            </td>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                    id="esportes" value="esportes">
+                <label class="form-check-label small" for="esportes">
+                    Esportes
+                </label>
+            </div>
 
-            </tr>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" 
+                    id="filmes" value="filmes">
+                <label class="form-check-label small" for="filmes">
+                    Filmes
+                </label>
+            </div>
 
-            <!-- Corpo -->
-            <tbody>
-            </tbody>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" 
+                    id="culinaia" value="culinaria">
+                <label class="form-check-label small" for="culinaria">
+                    Culinária
+                </label>
+            </div>
+ 
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" 
+                    id="jogos" value="jogos">
+                <label class="form-check-label small" for="jogos">
+                    Jogos
+                </label>
+            </div>
 
-            <!-- Roda pé -->
-             <tfoot class="table secondary">
-                <tr>
-                    <td colspan="3" class="text-center small">
-                        * Preços válidos até 30/09/2025:
-                        Frete Grátis acima de R$ 300,00*
-                    </td>
-            </tfoot>
-        </table>
 
+        </div>
+
+
+    </form>      
     </main>
     <!-- Fim: Area principal -->
 
@@ -210,9 +283,7 @@
                 <!-- Final da 2ª Coluna -->
 
                 <!-- 3ª Coluna -->
-                <div class="col-md-5"> 
-                    <h2> Terceira Coluna </h2>
-                </div>
+                
                 <!-- Final da 3ª Coluna -->
             </div>
             <!-- Final 1ª Linha-->
