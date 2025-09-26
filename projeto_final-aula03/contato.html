@@ -4,169 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
-    <meta name="description" content="Template do site">
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-        rel="stylesheet" >
-    -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-        rel="stylesheet" >
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <!-- Estilos personalizados (opcional) -->
     <style>
-
-        /**
         body {
             padding: 20px;
+            background:rgb(255, 255, 255)
         }
-        **/
-
-
-        header {
-            border-bottom: solid 3px black;
-            margin-bottom: 10px;
-        }
-        /** **/
-
-        /**
-        footer {
-            border-top: solid 3px black;
-            margin-top: 10px;
-        }
-        **/
-
-        .caixa {
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-            margin: 5px;
-        }
-
-       /** .imagem_produto{
-            max-width: 200px;
-            max-height: 200px;
-        }
-        **/
-
     </style>
 </head>
 <body>
-    <!-- Cabecalho da Página -->
-    <header class="bg-secondary text-black">
-        <!-- Container -->
-        <div class="container pt-3">
-            <!-- 1a Linha -->
+    <h1> </h1>
+
+    <main>
+        <div class="container">
             <div class="row">
-                <!-- 1a coluna -->
-                <div class="col-md-2">
-                    <p>Logo</p>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+            <h4 class="text-success fw-bold">Formulário de Contato</h4>
+            <div class="col-md-10 text center">
+                <form method="post" id="form-cadastro" class="needs-validation">
+
+                <div class="row  mb-4">
+
+                    <!--Nome completo-->
+                    <div class="mb-2">
+                        <label for="nome" class="form-label"> Nome Completo: </label>
+
+                        <input type="text" class="form-control" id="nome"
+                        name="nome" placeholder="Seu nome completo:" required>    
+                    </div>
+
+                    <!--E-mail-->
+
+                    <div class="mb-2">
+                        <label for="email" class="form-label"> E-mail: </label>
+
+                        <input type="email" class="form-control" id="email"
+                        name="email" placeholder="exemplo@email.com" required>    
+                    </div>
+
+                    <!--Telefone-->
+
+                    <div class="mb-2">
+                        <label for="telefone" class="form-label"> Telefone: </label>
+
+                        <input type="tel" class="form-control" id="telefone"
+                        name="telefone" placeholder="ex: 24992685226" required>    
+                    </div>
+
+                    <div class="mb-3"></div>
+
+                    <h5 class="text-success fw-bold"> Deseja receber notificações? </h5>
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="o"
+                        id="oSim" value="Sim" chevked>
+                    <label class="form-check-label" for="oSim">Sim</label>
+                    </div>
+
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="o"
+                        id="nao" value="opcao_nao" chevked>
+                    <label class="form-check-label" for="oNao">Não</label>
+                    </div>
+
+                    <h5 class="text-success fw-bold"> Observações: </h5>
+
+                    <div class="mb-3">
+                    <label for="observacoes" class="form-label"></label>
+                    <textarea class="form-control" id="observacoes" name="observacoes" rows="4" 
+                            maxlength="500" minlength="10"
+                            placeholder="Observações importantes..."></textarea>
+                </div> 
+
+                    <!--<button style="padding: 12px; border: none; border-radius: 8px; background-color: red; color: white; cursor: pointer;">Cancelar</button>-->
+                    
                 </div>
-                
-                <!-- 2a coluna -->
-                <div class="col-md-7">
-                    <p>Campo de busca</p>
+
+                <fieldset class="border p-3 mb-4" style="padding: 12px; border: none; border-radius: 8px; background-color: rgb(255, 255, 255); color: rgb(65, 161, 91); cursor: pointer;">
+                    <legend class="w-auto px-2">Envio de dados adicionais</legend>
+        
+                    
+                    <div class="mb-3">
+                        <label for="foto" class="form-label"> Imagem: </label>
+                        <input class="form-control" type="file" id="foto" name="foto" accept="image/*" required>
+                    </div>
+        
+                   
+                    <div class="mb-3">
+                        <label for="curriculo" class="form-label"> Arquivo (PDF):</label>
+                        <input class="form-control" type="file" id="curriculo" name="curriculo" accept=".pdf">
+                    </div>
+                </fieldset>
+            
+                    
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 9px; width: 240px;">
+                    <button style="padding: 12px; border: none; border-radius: 7px; background-color: rgb(36, 131, 57); color: white; cursor: pointer;">Confirmar Cadastro</button>
                 </div>
+
+
+                </form>
                 
-                <!-- 3a coluna -->
-                <div class="col-md-3">
-                    <p>Ícones</p>
-                </div>   
             </div>
         </div>
-    </header>
-    <!-- Fim: Cabecalho da Página -->
-
-    <!-- Area principal -->
-    <main>
        
-
     </main>
-    <!-- Fim: Area principal -->
 
-    <!-- Roda pe da pagina -->
-    <footer class="bg-black text-white">
-        <!-- Container -->
+    <footer class="bg-dark text-success mt-auto">
+        <!-- Div do container -->
         <div class="container py-4">
-            <!-- 1ª Linha -->
+            <!-- Div Linha -->
             <div class="row">
-                <!-- 1ª Coluna -->
-                <div class="col-md-2"> 
+
+                <!-- Coluna de links rapidos -->
+                <div class="col-md-2  mb-3">
                     <p>Links Rápidos</p>
                     <nav class="nav flex-column">
-                        <a class="nav-link text-white py-1" href="privacidade.html">Política de Privacidade</a>
-                        <a class="nav-link text-white py-1" href="suporte.html">Suporte</a>
-                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
-                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
-                        <a class="nav-link text-white py-1" href="blog.html">Blog</a> 
+                        <a class="nav-link text-success py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-success py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-success py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-success py-1" href="blog.html">Blog</a>  
+                        <a class="nav-link text-success py-1" href="ajuda.html">Ajuda</a>                      
                     </nav>
-
-                    <!-- Menu do rodape 
-                    <nav>                        
-                        <ul>
-                            <li><a href="privacidade.html"> Política de Privacidade</a></li>
-                            <li><a href="suporte.html"> Suporte </a></li>
-                            <li>Fale conosco</li>
-                            <li>Quem somos</li>                            
-                            <li>Termos e Condições</li>
-                        </ul>
-                    </nav>
-                    -->
-
                 </div>
-                <!-- Final da 1ª Coluna -->
 
-                <!-- 2ª Coluna -->
-                <div class="col-md-3 ">
-
-                    <p>Redes Sociais</p>
-                    
-                    <a href="http://facebook.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-facebook"></i></a>
-
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-twitter"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-instagram"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-linkedin"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-github"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-gitlab"></i></a>
-
+                <!-- Coluna - Contatos -->
+                <div class="col-md-2">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset text-success"></i> +55 (21) 98832-5699</p>
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:contato@jp_store.github.io" class="text-success">
+                            contato@jp_store.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" class="text-success">
+                            Acesse o suporte:
+                        </a> 
+                    </p>
                 </div>
-                <!-- Final da 2ª Coluna -->
-
-                <!-- 3ª Coluna -->
-                <div class="col-md-5"> 
-                    <h2> Terceira Coluna </h2>
+                
+                <!-- outras colunas do rodapé (opcional) -->
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
                 </div>
-                <!-- Final da 3ª Coluna -->
+
             </div>
-            <!-- Final 1ª Linha-->
+            <!-- <div> da linha -->
+
+            <hr/>
+
+            <div class="row">
+                <!-- Coluna - Idioma -->
+                <div class="col-md-2  mb-3">
+
+                    <select class="form-select form-select-sm text-success bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Português</option>
+                        <option value="English">Inglês</option>
+                        <option value="French">Espanhol</option>
+                        <option value="Spanish">Francês</option>
+                    </select>
+                
+                </div>
+                <!-- Coluna - idiomas -->
+
+                <!-- Coluna - moedas -->
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-success bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">Dólar</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+                 <!-- Coluna - moedas -->
+
+                <!-- Coluna - links rapidos -->
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-success">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-success">Privacidade</a> |
+                        <span class="text-success">© 2025 SENAC - Rio de Janeiro </span>
+                    </p>
+                </div>
+            </div>
         </div>
-        <!-- Final do container-->
-
-        
+        <!-- Div Container -->
     </footer>
-    <!-- Fim: Roda pe da pagina -->
-
-   
-
+    
     <!-- Bootstrap JS e dependências -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
