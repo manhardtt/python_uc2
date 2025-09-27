@@ -33,7 +33,7 @@
 
 
         header {
-            border-bottom: solid 3px black;
+            border-bottom: solid 3px rgb(48, 160, 53);
             margin-bottom: 10px;
         }
         /** **/
@@ -48,7 +48,7 @@
         .caixa {
             border-style: solid;
             border-width: 1px;
-            border-color: black;
+            border-color: rgb(48, 146, 45);
             margin: 5px;
         }
 
@@ -58,173 +58,295 @@
         }
         **/
 
+        .img-sm {
+            width: 40%;
+            max-width: 250px;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
-    <!-- Cabecalho da Página -->
-    <header class="bg-secondary text-black">
-        <!-- Container -->
-        <div class="container pt-3">
-            <!-- 1a Linha -->
-            <div class="row">
-                <!-- 1a coluna -->
-                <div class="col-md-2">
-                    <p>Logo</p>
+<main>
+
+    <!-- Cabeçalho -->
+<header class="bg-white text-success mt-auto">
+  <div class="container">
+      <div class="row py-4"> <!-- centralizando -->
+          <div class="col-md-2"> <!-- centralizando -->
+              <a href="index.html">
+                  <img src="img/logo_tenis.png.jpg" alt="JP Store" width="150" height="75">
+              </a>
+          </div>
+          <div class="col-md-8">
+              <form class="d-flex pt-3" role="search">
+                  <div class="input-group">
+                      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Pesquisar">
+                      <button class="btn btn-outline-secondary" type="submit">
+                          <i class="bi bi-search"></i>
+                      </button>
+                  </div>
+              </form>
+          </div>
+          <div class="col-md-2 text-end">
+              <p class="fs-3 pt-3">
+                  <i class="bi bi-person-circle" href="cadastro.html"></i>
+                    <i class="bi bi-building-fill"></i>
+                  <i class="bi bi-cart"></i>
+              </p>
+          </div>
+      </div>
+  </div>
+
+
+    <h1 class="mb-4 text-center text-success">Catálogo de Tênis Esportivos</h1>
+    <div class="container">
+        <div class="row">
+            <!-- Coluna esquerda: pares -->
+            <div class="col-md-6">
+                <div class="row g-3 justify-content-center">
+                    <!-- 2. Tenis Nike Air Max -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/airmax.avif" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tênis Nike Air Max">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">1. Tenis Nike Air Max</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Preto/Branco<br>
+                                Material: Mesh/Esportivo
+                            </p>
+                            <span class="badge bg-warning text-white mb-2">Últimas Unidades</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 420,00 <del class="text-muted" style="font-size: 0.8rem;">499,90</del></p>
+                        </div>
+                    </div>
+                    <!-- 4. Tenis Puma Ignite -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/Puma-Ignite-Feminino.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Puma Ignite">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">2. Tenis Puma Ignite</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Vermelho/Preto<br>
+                                Material: Couro/Suporte
+                            </p>
+                            <span class="badge bg-danger mb-2">Esgotado</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 320,00 <del class="text-muted" style="font-size: 0.8rem;">400,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 6. Tenis New Balance 574 -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/nbalace.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis New Balance 574">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">3. Tenis New Balance 574</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Cinza<br>
+                                Material: Camurça/Estilo
+                            </p>
+                            <span class="badge bg-warning text-white mb-2">Últimas Unidades</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 310,00 <del class="text-muted" style="font-size: 0.8rem;">365,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 8. Tenis Mizuno Wave Rider -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/mizuno.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Mizuno Wave Rider">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">4. Tenis Mizuno Wave Rider</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Azul Claro/Branco<br>
+                                Material: Mesh/Performance
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 480,00 <del class="text-muted" style="font-size: 0.8rem;">550,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 10. Tenis Converse Chuck Taylor -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/chorao.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Converse Chuck Taylor">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">5. Tenis Converse Chuck Taylor</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Branco<br>
+                                Material: Lona/Casual
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 220,00 <del class="text-muted" style="font-size: 0.8rem;">250,00</del></p>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- 2a coluna -->
-                <div class="col-md-7">
-                    <p>Campo de busca</p>
+            </div>
+
+            <!-- Coluna direita: ímpares -->
+            <div class="col-md-6">
+                <div class="row g-3 justify-content-center">
+                    <!-- 1. Tenis Asics Run 25' -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/shoes5.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Asics Run 25">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">6. Tenis Asics Run 25'</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Cinza/Verde<br>
+                                Material: Dry-Fit/Corrida
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 350,00 <del class="text-muted" style="font-size: 0.8rem;">432,90</del></p>
+                        </div>
+                    </div>
+                    <!-- 3. Tenis Adidas Ultraboost -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/shoes1.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Adidas Ultraboost">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">7. Tenis Adidas Ultraboost</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Branco<br>
+                                Material: Knit/Amortecimento
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 600,00 <del class="text-muted" style="font-size: 0.8rem;">720,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 5. Tenis Reebok Classic -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/shoes4.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Reebok Classic">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">8. Tenis Reebok Classic</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Azul Marinho<br>
+                                Material: Couro/Conforto
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 290,00 <del class="text-muted" style="font-size: 0.8rem;">350,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 7. Tenis Vans Old Skool -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/vans.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Vans Old Skool">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">9. Tenis Vans Old Skool</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Preto/Branco<br>
+                                Material: Lona/Casual
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 270,00 <del class="text-muted" style="font-size: 0.8rem;">320,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 9. Tenis Asics Gel-Kayano -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/images.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Asics Gel-Kayano">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">10. Tenis Asics Gel-Kayano</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Preto/Vermelho<br>
+                                Material: Mesh/Estabilidade
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 580,00 <del class="text-muted" style="font-size: 0.8rem;">650,00</del></p>
+                        </div>
+                    </div>
+                    <!-- 11. Tenis Fila Disruptor -->
+                    <div class="card mx-auto" style="max-width: 220px;">
+                        <img src="img/download.jpg" class="card-img-top mx-auto mt-2" style="max-width: 140px; height: auto;" alt="Tenis Fila Disruptor">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold">11. Tenis Fila Disruptor</h6>
+                            <p class="card-text mb-1" style="font-size: 0.85rem;">
+                                Cor: Branco/Rosa<br>
+                                Material: Couro/Chunky
+                            </p>
+                            <span class="badge bg-success mb-2">Disponível</span>
+                            <p class="text-success fw-bold mb-0" style="font-size: 1rem;">R$ 370,00 <del class="text-muted" style="font-size: 0.8rem;">440,00</del></p>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- 3a coluna -->
-                <div class="col-md-3">
-                    <p>Ícones</p>
-                </div>   
             </div>
         </div>
-    </header>
-    <!-- Fim: Cabecalho da Página -->
+    </div>
+    <!-- Rodapé -->
+    <footer class="text-center mt-4 small text-muted">
+        * Preços válidos até 30/09/2025: Frete Grátis acima de R$ 300,00 *
+    </footer>
+</main>
 
-    <!-- Area principal -->
-    <main>
-       
-       <h1 class="mb-4 text-center"> Catálogo de Tênis Esportivos</h1>
-       <div class="table-responsive-lg">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-10">
-                <div class="table-responsive-lg">
-                    <table class="table table-light table-striped">
-        <table class="table table-light table striped"> </table>   
-        </div>
-       
-       
-        <!-- Tabela-->
-        <table class="table">
-
-            <!-- Cabeçalho -->
-            <thead class="table-dark">
-            
-            
-                <tr>
-                <th scope="col" style="width: 15%"> Foto </th>
-                <th scope="col" style="width: 55%"> Descrição </th>
-                <th scope="col" style="width: 30%"> Valor </th>
-            </tr>
-            </thead>
-            <tr>
-                <td href="#" class="tenis_1">
-                    <img src="img/shoes5.jpg" 
-                    class="img-thumbnail"> 
-                </td>
-                <td>
-                <h5>Tenis Asics Run 25'<h5>
-                <ul class="list-unstyled">
-                    <li><small> Cor: Cinza/Verde </small></li>
-                    <li><small> Material: Dry-Fit/Corrida </small></li>
-                    <li><span class="badge rounded-pill text-bg-success"> Disponível </span></li>
-                </ul>
-
-            </td>
-            <td>
-                <span class="text-success fw-bold"> R$ 350,00</span>
-                <del class="text-muted d-block"> 432,90</del>
-            </td>
-
-            </tr>
-
-            <!-- Corpo -->
-            <tbody>
-            </tbody>
-
-            <!-- Roda pé -->
-             <tfoot class="table secondary">
-                <tr>
-                    <td colspan="3" class="text-center small">
-                        * Preços válidos até 30/09/2025:
-                        Frete Grátis acima de R$ 300,00*
-                    </td>
-            </tfoot>
-        </table>
-
-    </main>
     <!-- Fim: Area principal -->
 
-    <!-- Roda pe da pagina -->
-    <footer class="bg-black text-white">
-        <!-- Container -->
+ <footer class="bg-dark text-success mt-auto">
+        <!-- Div do container -->
         <div class="container py-4">
-            <!-- 1ª Linha -->
+            <!-- Div Linha -->
             <div class="row">
-                <!-- 1ª Coluna -->
-                <div class="col-md-2"> 
+
+                <!-- Coluna de links rapidos -->
+                <div class="col-md-2  mb-3">
                     <p>Links Rápidos</p>
                     <nav class="nav flex-column">
-                        <a class="nav-link text-white py-1" href="privacidade.html">Política de Privacidade</a>
-                        <a class="nav-link text-white py-1" href="suporte.html">Suporte</a>
-                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
-                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
-                        <a class="nav-link text-white py-1" href="blog.html">Blog</a> 
+                        <a class="nav-link text-success py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-success py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-success py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-success py-1" href="blog.html">Blog</a>  
+                        <a class="nav-link text-success py-1" href="ajuda.html">Ajuda</a>                      
                     </nav>
-
-                    <!-- Menu do rodape 
-                    <nav>                        
-                        <ul>
-                            <li><a href="privacidade.html"> Política de Privacidade</a></li>
-                            <li><a href="suporte.html"> Suporte </a></li>
-                            <li>Fale conosco</li>
-                            <li>Quem somos</li>                            
-                            <li>Termos e Condições</li>
-                        </ul>
-                    </nav>
-                    -->
-
                 </div>
-                <!-- Final da 1ª Coluna -->
 
-                <!-- 2ª Coluna -->
-                <div class="col-md-3 ">
-
-                    <p>Redes Sociais</p>
-                    
-                    <a href="http://facebook.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-facebook"></i></a>
-
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-twitter"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-instagram"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-linkedin"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-github"></i></a>
-                    
-                    <a href="http://instagram.com.br" target="_blank" 
-                        class="text-white p-1"><i class="bi bi-gitlab"></i></a>
-
+                <!-- Coluna - Contatos -->
+                <div class="col-md-2">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset text-success"></i> +55 (21) 98832-5699</p>
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:contato@jp_store.github.io" class="text-success">
+                            contato@jp_store.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" class="text-success">
+                            Acesse o suporte:
+                        </a> 
+                    </p>
                 </div>
-                <!-- Final da 2ª Coluna -->
-
-                <!-- 3ª Coluna -->
-                <div class="col-md-5"> 
-                    <h2> Terceira Coluna </h2>
+                
+                <!-- outras colunas do rodapé (opcional) -->
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
                 </div>
-                <!-- Final da 3ª Coluna -->
+
             </div>
-            <!-- Final 1ª Linha-->
+            <!-- <div> da linha -->
+
+            <hr/>
+
+            <div class="row">
+                <!-- Coluna - Idioma -->
+                <div class="col-md-2  mb-3">
+
+                    <select class="form-select form-select-sm text-success bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Português</option>
+                        <option value="English">Inglês</option>
+                        <option value="French">Espanhol</option>
+                        <option value="Spanish">Francês</option>
+                    </select>
+                
+                </div>
+                <!-- Coluna - idiomas -->
+
+                <!-- Coluna - moedas -->
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-success bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">Dólar</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+                 <!-- Coluna - moedas -->
+
+                <!-- Coluna - links rapidos -->
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-success">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-success">Privacidade</a> |
+                        <span class="text-success">© 2025 SENAC - Rio de Janeiro </span>
+                    </p>
+                </div>
+            </div>
         </div>
-        <!-- Final do container-->
-
-        
+        <!-- Div Container -->
     </footer>
-    <!-- Fim: Roda pe da pagina -->
-
-   
-
+    
     <!-- Bootstrap JS e dependências -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
